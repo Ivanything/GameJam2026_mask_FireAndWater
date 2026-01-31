@@ -18,7 +18,6 @@ public abstract class Health : MonoBehaviour
         if (health < 0)
         {
             death.Die();
-            health = maxHealth;
         }
     }
 }

@@ -10,7 +10,7 @@ public class PlayerMoveScript : MonoBehaviour
     public float jumpHeight;
     float fall;
     PlayerController controller;
-
+    public Animator playerAnim;
     void Start()
     {
         cc = GetComponent<CharacterController>();
@@ -23,6 +23,9 @@ public class PlayerMoveScript : MonoBehaviour
         MovementLogic();
         CameraMove();
         FallingLogic();
+
+        if (playerAnim)
+            playerAnim.SetFloat("Speed", controller.moveInput().magnitude);
     }
 
 
