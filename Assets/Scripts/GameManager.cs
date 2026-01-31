@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
 
     public List<Transform> bossPath = new List<Transform>();
     public Transform boss;
+    public Health playerHealth;
+    public Health healthBoss;
+    public PlayerShooting playerammo;
 
     void Awake()
     {

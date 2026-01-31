@@ -30,4 +30,5 @@ public class PlayerShooting : MonoBehaviour
     {
         ammo = maxAmmo;
     }
+    
 }
